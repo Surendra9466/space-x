@@ -6,9 +6,13 @@
 
     .featured {
         position: absolute;
-        top: 50%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @media (min-width: 768px) {
+            top: 40%
+        }
 
     }
 
@@ -23,88 +27,13 @@
             font: 100px/95px D-DIN-Bold, Arial, Verdana, sans-serif;
         }
 
-        font-family: Oswald;
-        animation: Color 4s linear infinite;
-        margin-bottom: 20px;
-        -webkit-animation: Color 4s ease-in-out infinite;
-
-        @keyframes Color {
-            0% {
-                color: #A0D468;
-            }
-
-            20% {
-                color: #4FC1E9;
-            }
-
-            40% {
-                color: #FFCE54;
-            }
-
-            60% {
-                color: #FC6E51;
-            }
-
-            80% {
-                color: #ED5565;
-            }
-
-            100% {
-                color: #AC92EC;
-            }
-        }
-
-        @-moz-keyframes Color {
-            0% {
-                color: #A0D468;
-            }
-
-            20% {
-                color: #4FC1E9;
-            }
-
-            40% {
-                color: #FFCE54;
-            }
-
-            60% {
-                color: #FC6E51;
-            }
-
-            80% {
-                color: #ED5565;
-            }
-
-            100% {
-                color: #AC92EC;
-            }
-        }
-
-        @-webkit-keyframes Color {
-            0% {
-                color: #A0D468;
-            }
-
-            20% {
-                color: #4FC1E9;
-            }
-
-            40% {
-                color: #FFCE54;
-            }
-
-            60% {
-                color: #FC6E51;
-            }
-
-            80% {
-                color: #ED5565;
-            }
-
-            100% {
-                color: #AC92EC;
-            }
-        }
+        background-image: url(https://cdn0.vox-cdn.com/uploads/chorus_asset/file/6310205/liftoff.0.gif);
+        background-size: cover;
+        color: transparent;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        text-transform: uppercase;
+        margin: 10px 0;
     }
 
     .featured-tagline {
