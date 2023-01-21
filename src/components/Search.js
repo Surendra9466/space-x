@@ -12,7 +12,7 @@ export default function Search({setSearchQuery, searchQuery}) {
       noValidate
       autoComplete="off"
     >
-      <TextField id="outlined-basic" label="Outlined" variant="outlined" onChange={(e)=> setSearchQuery(e.target.value)} value={searchQuery}/>
+      <TextField id="outlined-basic" label="Search Rocket (eg: falcon 1)" variant="outlined" onChange={(e)=> setSearchQuery(e.target.value)} value={searchQuery}/>
     </Box>
   );
 }
