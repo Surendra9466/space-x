@@ -1,0 +1,155 @@
+.singleRocket {
+    background-image: url("../assets/rocket_hero_banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+    .featured {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .featured-title {
+        font: 70px/65px D-DIN-Bold, Arial, Verdana, sans-serif;
+
+        @media (min-width: 600px) {
+            font: 80px/74px D-DIN-Bold, Arial, Verdana, sans-serif;
+        }
+
+        @media (min-width: 960px) {
+            font: 100px/95px D-DIN-Bold, Arial, Verdana, sans-serif;
+        }
+        font-family: Oswald;
+        animation: Color 4s linear infinite;
+        margin-bottom: 20px;
+        -webkit-animation: Color 4s ease-in-out infinite;
+
+        @keyframes Color {
+            0% {
+                color: #A0D468;
+            }
+
+            20% {
+                color: #4FC1E9;
+            }
+
+            40% {
+                color: #FFCE54;
+            }
+
+            60% {
+                color: #FC6E51;
+            }
+
+            80% {
+                color: #ED5565;
+            }
+
+            100% {
+                color: #AC92EC;
+            }
+        }
+
+        @-moz-keyframes Color {
+            0% {
+                color: #A0D468;
+            }
+
+            20% {
+                color: #4FC1E9;
+            }
+
+            40% {
+                color: #FFCE54;
+            }
+
+            60% {
+                color: #FC6E51;
+            }
+
+            80% {
+                color: #ED5565;
+            }
+
+            100% {
+                color: #AC92EC;
+            }
+        }
+
+        @-webkit-keyframes Color {
+            0% {
+                color: #A0D468;
+            }
+
+            20% {
+                color: #4FC1E9;
+            }
+
+            40% {
+                color: #FFCE54;
+            }
+
+            60% {
+                color: #FC6E51;
+            }
+
+            80% {
+                color: #ED5565;
+            }
+
+            100% {
+                color: #AC92EC;
+            }
+        }
+    }
+
+}
+
+.description {
+    background-image: url("../assets/rocket_capsule.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    .info {
+        @media (min-width: 550px) {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+
+    .description_info {
+        font: 20px/38px D-DIN-Medium, Arial, Verdana, sans-serif;
+        width: 50%;
+        top: 50%;
+        left: 30px;
+    }
+}
+
+.overview-wrapper {
+    background-image: url("../assets/mars_landing.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    .overview {
+        top: 15%;
+        right: 10%;
+        max-width: 290px;
+        width: 100%;
+
+        @media (min-width: 450px) {
+            max-width: 350px;
+        }
+    }
+
+    .engine-data {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+}
